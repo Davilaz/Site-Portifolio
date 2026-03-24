@@ -1,0 +1,212 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* typewiret */
+.cursor{
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  vertical-align: middle;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink{
+  50% {opacity: 0;}
+}
+
+/* body{
+background:#0f172a;
+color:white;
+
+
+body{
+background: url("Imagens/Fundo.jpeg") center/cover no-repeat;
+animation: zoom 10s infinite alternate;
+}
+
+@keyframes zoom{
+0%{
+background-size:100%;
+}
+100%{
+background-size:110%;
+}
+}}*/
+
+/* Efeito particulas jss */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+background:#0f172a;
+}
+
+header{
+padding:30px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:bold;
+font-size:20px;
+color: aliceblue;
+}
+
+/* Menu */
+
+.menu{
+display: flex;
+gap: 25px;
+align-items: center;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#cbd5f5;
+    font-size:14px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* efeito underline animado */
+
+.menu a::after{
+    content:"";
+  position: absolute;
+  left:0;
+  bottom:-5px;
+  width:0%;
+  height:2px;
+  background:#38bdf8;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+.menu a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+color: beige;
+}
+
+.hero p{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.buttons{
+display:flex;
+gap:30px;
+}
+
+.btn{
+padding:10px 20px;
+border-radius:25px;
+border:1px solid #38bdf8;
+color:#38bdf8;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#38bdf8;
+color:#0f172a;
+transform: scale(1.1);
+}
+
+.primary:hover{
+background:#38bdf8;
+color:#0f172a;
+}
+
+.about{
+padding:80px 20px;
+text-align:center;
+max-width:600px;
+margin:auto;
+}
+
+h2{
+color: beige;
+text-align: center;
+}
+
+.about h2{
+margin-bottom:20px;
+color: beige;
+}
+
+.about p{
+color:#94a3b8;
+}
+
+.projects{
+padding:80px 20px;
+text-align:center;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+max-width:300px;
+margin:20px auto;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform: scale(1.2);
+}
+
+.project-card p{
+color:#94a3b8;
+margin:10px 0;
+}
+
+.project-card a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+}
+
+/* Responsivo */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:28px;
+}
+
+}
